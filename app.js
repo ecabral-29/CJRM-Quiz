@@ -25,9 +25,11 @@ const handleUserAnswer = (event) => {
     }
 
     quizScore.textContent = score
+    
   }
 
   userAnswers.forEach(checkUserAnswer)
+
 }
 
 form.addEventListener('submit', handleUserAnswer)
