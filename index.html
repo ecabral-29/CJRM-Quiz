@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Quiz Musical</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a class="quiz-logo">Quiz</a>
+      </div>
+      <div class="score">
+        <span class="score-label">Score:</span>
+        <p class="quiz-score"></p>
+      </div>
+    </header>
+    <main class="conteudo-principal">
+      <div class="container">
+        <div class="quiz-titulo">
+          <h1>
+            Faça a associação correta entre guitarista <span>VS</span> banda
+          </h1>
+        </div>
+        <form class="quiz-form">
+          <div class="questions">
+            <div class="question">
+              <p class="question-description">1. Steve Vai:</p>
+              <div class="question-choice">
+                <label>
+                  <input class="question-input"type="radio" name="inputQuestion1" value="A" checked/>
+                  Whitesnake
+                </label>
+              </div>
+              <div class="question-choice">
+                <label>
+                  <input class="question-input" type="radio" name="inputQuestion1" value="B"/>
+                  Megadeth
+                </label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p class="question-description">2. Paul Gilbert:</p>
+              <div class="question-choice">
+                <label>
+                  <input type="radio" name="inputQuestion2" value="A" checked/>
+                  Mr Big
+                </label>
+              </div>
+              <div class="question-choice">
+                <label>
+                  <input type="radio" name="inputQuestion2" value="B" />
+                  Angra
+                </label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p class="question-description">3. Edward Lodewijk Van Halen:</p>
+              <div class="question-choice">
+                <label>
+                  <input type="radio" name="inputQuestion3" value="A" checked/>
+                  Sepultura
+                </label>
+              </div>
+              <div class="question-choice">
+                <label>
+                  <input type="radio" name="inputQuestion3" value="B" />
+                  Van Halen
+                </label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p class="question-description">4. Yngwie Malmsteen:</p>
+              <div class="question-choice">
+                <label>
+                  <input type="radio" name="inputQuestion4" value="A" checked/>
+                  Scorpions
+                </label>
+              </div>
+              <div class="question-choice">
+                <label>
+                  <input type="radio" name="inputQuestion4" value="B"/>
+                  Alcatrazz
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="quiz-submit">
+            <button>Enviar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    
+    <script src="./app.js"></script>
+  </body>
+</html>
